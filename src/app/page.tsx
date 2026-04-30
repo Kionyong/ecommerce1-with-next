@@ -1,4 +1,3 @@
-import HomeItems from "./components/homeitem";
 import Slider from "./components/slide";
 
 export default function Home() {
