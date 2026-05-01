@@ -1,5 +1,4 @@
 import type { NextConfig } from "next";
-
 const nextConfig: NextConfig = {
   //output: "export",
   reactCompiler: true,
@@ -7,8 +6,8 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "**",
-      },
+        hostname: "res.reres.cloudinary.com",
+      }
     ],
   }
 };
