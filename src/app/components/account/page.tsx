@@ -2,6 +2,7 @@ import "@/app/globals.css";
 import Image from "next/image";
 import Link from "next/link";
 import { IoIosNotificationsOutline } from "react-icons/io";
+import { CiLogout } from "react-icons/ci";
 export default function UserAccount() {
       return (
             <main className="max-w-full flex flex-col justify-center items-center p-5">
@@ -27,7 +28,7 @@ export default function UserAccount() {
                               </div>
                         </div>
                   </div>
-                  <div className="bg-mist-100 mt-3 w-full rounded-lg h-100">
+                  <div className="bg-mist-100 mt-3 lg:h-auto w-full rounded-lg m-5">
                         <div className="w-full h-auto p-5 flex flex-row justify-between"> 
                               <div className="w-10 h-10 rounded-2xl border">
 
@@ -52,6 +53,19 @@ export default function UserAccount() {
                                     <input type="text" name="" className="mr-3 rounded-lg border-blue-200 outline-0 border ms-8 h-8 sm:w-90 w-60 md:w-100 ps-2 mt-2 " placeholder="Last Name" />
                               </div>
                         </form>
+                        <div className="ms-5 flex flex-col p-5">
+                              <h1 className="text-[20px] font-bold">My email Address</h1>
+                              <p className="text-blue-600">kimdara@gmail.com</p>
+                        </div>
+                        <Link href={'/f'} className="mt-10 ms-5">
+                              <button type="button" className="cursor-pointer bg-blue-400 rounded-lg h-10 w-30">+ Add email</button>
+                        </Link>
+                        <div className="mt-10 mb-2 ms-5 bg-red-500 w-30 h-10 flex justify-center items-center rounded-lg cursor-pointer">
+                              <span className="flex flex-row items-center">
+                                    <CiLogout color="white" />
+                                    <Link href={'/'} className="text-white">Logout</Link>
+                              </span>
+                        </div>
                   </div>
             </main>
       );

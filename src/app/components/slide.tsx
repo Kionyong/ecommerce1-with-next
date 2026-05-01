@@ -13,8 +13,8 @@ export default function Slider() {
                         <h1 className="text-2xl md:text-3xl font-bold">Shop Now</h1>
 
                         <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-                              <Link href="/">Category</Link>
-                              <Link href="/">Deal's</Link>
+                              <Link href="/">Shop</Link>
+                              <Link href="/">About</Link>
                               <Link href="/">What's New</Link>
                               <Link href="/">Delivery</Link>
                         </div>
