@@ -29,7 +29,9 @@ export default function Slider() {
                               <div className="flex gap-4">
                                     <span className="flex items-center gap-1 cursor-pointer">
                                           <CiUser size={20} />
-                                          Account
+                                         <Link href={'/components/account'}>
+                                                Accouunt
+                                         </Link>
                                     </span>
                                     <span className="flex items-center gap-1 cursor-pointer">
                                           <CiShoppingCart size={20} />

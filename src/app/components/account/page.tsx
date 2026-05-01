@@ -1,0 +1,29 @@
+import "@/app/globals.css";
+import Image from "next/image";
+import { IoIosNotificationsOutline } from "react-icons/io";
+export default function UserAccount(){
+      return(
+           <main className="max-w-full flex justify-center items-center p-5">
+                  <div className="lg:min-w-11/12 md:max-w-2xl h-auto lg:flex flex-col bg-mist-100 rounded-lg shadow overflow-auto">  
+                  {/*container of pages*/}
+                        <div className="md:flex flex-row items-center justify-between">
+                              <div className="flex flex-col ps-5 md:py-2">
+                                    <h1 className="font-normal text-lg">Welcome Kim Dara</h1>
+                                    <p className="text-gray-400">Fri 01 2026</p>
+                              </div>
+                              <div className="md:flex flex-row justify-between md:mr-5">
+                                    <input type="text" name="" className="mr-3 rounded-lg border-blue-200 outline-0 ps-2 border lg:h-8 mt-1 lg:w-80" placeholder="Search..."/>
+                                    <div className="w-8 h-8 bg-neutral-300 rounded-lg flex justify-between items-center mr-3 mt-1">
+                                          <IoIosNotificationsOutline size={20} className="w-full" />
+                                    </div>
+                                    <div className="border w-10 h-10 rounded-2xl pr-5">
+                                          <Image src={'/'} width={100} height={100} alt="Error" className="md:h-full md:w-48"/>
+                                    </div>
+                              </div>
+                        </div>
+
+
+                  </div>
+           </main>
+      );
+}
