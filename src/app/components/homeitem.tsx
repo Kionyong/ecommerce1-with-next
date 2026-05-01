@@ -6,16 +6,21 @@ import { CiStar } from "react-icons/ci";
 export default function HomeItems() {
       const [shop,setShop] = useState<any>([]);
       console.log(shop)
+      
       const getShop = async () => {
-            const res = await fetch('/api/shop', {
-                  method: 'GET',
-                  headers: {
-                        'Content-Type': 'application/json'
+            try {
+                  const res = await fetch('/api/shop');
+
+                  if (!res.ok) {
+                        throw new Error("API Error");
                   }
-            });
-            const data = await res.json();
-            setShop(data);
-      }
+
+                  const data = await res.json();
+                  setShop(data);
+            } catch (error) {
+                  console.error("Fetch error:", error);
+            }
+      };
       useEffect(()=>{
             getShop();
       },[]);
@@ -29,7 +34,7 @@ export default function HomeItems() {
                               shop.map((items:any,index:any)=>(
                                     <div className="h-80 rounded-lg border-blue-200 border" key={index}>
                                           <div className="flex justify-center items-center h-50">
-                                                <Image src={items.images} width={200} height={200} alt={items.titles} />
+                                                <Image src={items.images}  width={200} height={200} alt={items.titles} />
                                           </div>
                                           <div className="row-span-2 flex flex-row ps-5 overflow-hidden">
                                                 <CiStar size={15} color="red" />
