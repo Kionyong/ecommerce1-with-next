@@ -29,7 +29,7 @@ export default function HomeItems() {
                               shop.map((items:any,index:any)=>(
                                     <div className="h-80 rounded-lg border-blue-200 border" key={index}>
                                           <div className="flex justify-center items-center h-50">
-                                                <Image src={items.images} width={200} height={200} alt={items.titles} unoptimized />
+                                                <Image src={items.images} width={200} height={200} alt={items.titles} />
                                           </div>
                                           <div className="row-span-2 flex flex-row ps-5 overflow-hidden">
                                                 <CiStar size={15} color="red" />
