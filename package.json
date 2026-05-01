@@ -3,12 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-  "dev": "next dev",
-  "build": "next build",
-  "export": "next export",
-  "deploy": "gh-pages -d out"
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next export",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
+    "mysql2": "^3.22.3",
     "next": "16.2.4",
     "react": "19.2.4",
     "react-dom": "19.2.4",
