@@ -7,8 +7,13 @@ export default function HomeItems() {
       const [shop,setShop] = useState<any[]>([]);  
       const getShop = async () => {
             try {
-                  const res = await fetch('/api/shop');
-
+                  const res = await fetch('/api/shop',{
+                        method:'GET',
+                        headers:{
+                              'Content-Type' :'application/json'
+                        }
+                  });
+                  console.log(res);
                   if (!res.ok) {
                         throw new Error("API Error");
                   }
