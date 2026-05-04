@@ -41,16 +41,34 @@ export default function UserAccount() {
                         </div>
                         <form action="" className="w-1/2 p-5">
                               <div className="flex lg:flex-row justify-between flex-col">
-                                    <input type="text" name="" className="mr-3 rounded-lg border-blue-200 outline-0 border ms-8 h-8 sm:w-100 w-60 md:w-100 ps-2 mt-2 "placeholder="Frist Name" />
-                                    <input type="text" name="" className="mr-3 rounded-lg border-blue-200 outline-0 border ms-8 h-8 sm:w-100 w-60 md:w-100 ps-2 mt-2 " placeholder="Last Name" />
+                                    <div className="lg:w-auto ms-5">
+                                          <label htmlFor="" className="text-indigo-700">First Name*</label>
+                                          <input type="text" name="" className="border sm:w-100 w-60 h-9 outline-0 rounded-lg ps-2"placeholder="Frist Name" />
+                                    </div>
+                                    <div className="w-auto ms-5">
+                                          <label htmlFor="" className="text-indigo-700">First Name*</label>
+                                          <input type="text" name="" className="border sm:w-100 w-60 h-9 outline-0 rounded-lg ps-2" placeholder="Frist Name" />
+                                    </div>
                               </div>
                               <div className="flex lg:flex-row justify-between flex-col">
-                                    <input type="text" name="" className="mr-3 rounded-lg border-blue-200 outline-0 border ms-8 h-8 sm:w-100 w-60 md:w-100 ps-2 mt-2 " placeholder="Frist Name" />
-                                    <input type="text" name="" className="mr-3 rounded-lg border-blue-200 outline-0 border ms-8 h-8 sm:w-100 w-60 md:w-100 ps-2 mt-2 " placeholder="Last Name" />
+                                    <div className="lg:w-auto ms-5">
+                                          <label htmlFor="" className="text-indigo-700">First Name*</label>
+                                          <input type="text" name="" className="border sm:w-100 w-60 h-9 outline-0 rounded-lg ps-2" placeholder="Frist Name" />
+                                    </div>
+                                    <div className="w-auto ms-5">
+                                          <label htmlFor="" className="text-indigo-700">First Name*</label>
+                                          <input type="text" name="" className="border sm:w-100 w-60 h-9 outline-0 rounded-lg ps-2" placeholder="Frist Name" />
+                                    </div>
                               </div>
                               <div className="flex lg:flex-row justify-between flex-col">
-                                    <input type="text" name="" className="mr-3 rounded-lg border-blue-200 outline-0 border ms-8 h-8 sm:w-90 w-60 md:w-100 ps-2 mt-2 " placeholder="Frist Name" />
-                                    <input type="text" name="" className="mr-3 rounded-lg border-blue-200 outline-0 border ms-8 h-8 sm:w-90 w-60 md:w-100 ps-2 mt-2 " placeholder="Last Name" />
+                                    <div className="lg:w-auto ms-5">
+                                          <label htmlFor="" className="text-indigo-700">First Name*</label>
+                                          <input type="text" name="" className="border sm:w-100 w-60 h-9 outline-0 rounded-lg ps-2" placeholder="Frist Name" />
+                                    </div>
+                                    <div className="w-auto ms-5">
+                                          <label htmlFor="" className="text-indigo-700">First Name*</label>
+                                          <input type="text" name="" className="border sm:w-100 w-60 h-9 outline-0 rounded-lg ps-2" placeholder="Frist Name" />
+                                    </div>
                               </div>
                         </form>
                         <div className="ms-5 flex flex-col p-5">
